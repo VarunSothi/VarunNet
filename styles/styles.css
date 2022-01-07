@@ -70,7 +70,7 @@ li {
 
 li a {
   display: block;
-  color: rgb(247, 0, 255);
+  color: rgb(0, 0, 0);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -118,6 +118,7 @@ a {
 .links{
   line-height: 0;
   padding: 0;  
+  margin: auto;
 }
 
 .links ul{
@@ -125,12 +126,13 @@ a {
 }
 
 .navigation ul{
-  margin: 1000px 0;
+  margin: auto;
 }
 /*-------Logos-------*/
 
 .logos{
   height: 0
+  margin: auto;
 }
 
 .logos li {
@@ -184,13 +186,13 @@ table th{
 /*-----------------------------------------------------------------------------*/
 .row {
   display: flex; /* equal height of the children */
+  background-color: rgb(255, 255, 255);
 }
 
-.col {
+.col-nav {
   flex: 1; /* additionally, equal width */
-  
-  padding: 1em;
-  border: solid;
+  padding: 0;
+  border: none;
   line-height: 0;
   display: inline-block;
   float: right;
@@ -198,20 +200,52 @@ table th{
   margin: auto;
 }
 
+.col-nav img{
+  width:  50px;
+  height: 50px; 
+}
 
-.col img{
+.col-nav li {
+padding: 0px;
+}
+
+.col-nav li a:hover:not(.activelink) {
+  background-color: rgb(197, 197, 197);
+  opacity: 0.5;
+  display:block;
+  text-align: center;
+  height: auto;
+  text-decoration: none;
+  margin:inherit;
+  line-height: auto;
+  padding: auto;
+}
+
+
+.col-links {
+  flex: 1; /* additionally, equal width */
+  padding: 0;
+  border: none;
+  line-height: 0;
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+}
+.col-links li{
+float: right;
+}
+
+.col-links img{
   width:  50px;
   height: 50px; 
 
 }
 
-.col li a:hover:not(.activelink) {
-  background-color: #111;
+.col-links li a:hover:not(.activelink) {
+  background-color: rgb(154, 185, 202);
+  
 }
 
-.col li a.activelink {
-  background-color: #04aaaa;
-}
 
 /*----------Projects-----------*/
 
