@@ -1,3 +1,4 @@
+/*
 let myImage = document.querySelector('img');
 
 myImage.onclick = function() {
@@ -8,6 +9,7 @@ myImage.onclick = function() {
     myImage.setAttribute ('src','images/cam.jpg');
   }
 }
+*/
 
 // Welcome message
 

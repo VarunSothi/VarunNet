@@ -3,73 +3,6 @@ html {
   font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google fonts */
 }
 
-h1 {
-  font-size: 60px;
-  text-align: center;
-}
-
-h1 {
-  margin: 0;
-  padding: 20px 0;
-  color: #000000;
-  /*text-shadow: 3px 3px 1px black;*/
-}
-
-
-
-h2 {
-  font-size: 50px;
-  margin: 0;
-  padding: 5px;
-  color: #000000;
-  text-align: center;
-  
-}
-
-p{
-  font-size: 20px;
-  line-height: 2;
-  letter-spacing: 1px;
-  text-indent: 420px;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-/*----------------Li-------------*/
-li {
-  font-size: 16px;
-  line-height: 2;
-  letter-spacing: 1px;
-  display: inline;
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-
-a {
-  display: block;
-  padding: 8px;
-}
-
-li a:hover:not(.activelink) {
-  background-color: #111;
-}
-.activelink {
-  background-color: #04aaaa;
-}
-
 html {
   background-color: #ffffff;
 }
@@ -82,19 +15,12 @@ body {
   padding: 20px 20px 20px 20px;
   /*border: 5px solid black;*/
 }
-
-
 .title {
   height: 100px;
 }
 
-.contents{
-  height: 50px;
-  padding: 50px 50px 50px 50px;
-}
-
 .images {
-  height : 0px;
+  height : 50px;
   padding: 50px 50px 50px 50px;
 }
 
@@ -103,17 +29,142 @@ img {
   margin: 0 auto;
 }
 
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px 0;
+  color: #000000;
+  /*text-shadow: 3px 3px 1px black;*/
+}
+
+h2 {
+  font-size: 35px;
+  margin: 0;
+  padding: 5px;
+  color: #000000;
+  text-align: center;  
+}
+
+p{
+  font-size: 20px;
+  line-height: 2;
+  letter-spacing: 1px;
+  text-indent: 420px;
+  margin: 0;
+  padding: 5px;
+  text-align: left;
+}
+
+/*----------------Li-------------*/
+li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+  display: inline;
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(247, 0, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+a {
+  display: block;
+  padding: 8px;
+}
+
+
+/*-----Contents------*/
+.contents{
+  height: auto;
+  /*padding: 0;*/
+  margin:auto;
+  display:block;
+}
+
+.contents ul {
+  line-height: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0px 0px 0px 0px;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.contents li a {
+  font-size: 16px;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+
+}
+
+.links li a:hover:not(.activelink) {
+  background-color: #111;
+}
+
+.links li a.activelink {
+  background-color: #04aaaa;
+}
+
+.links{
+  line-height: 0;
+  padding: 0;  
+}
+
+.links ul{
+  padding: 0px 0px 0px 0px;
+}
+
+.navigation ul{
+  margin: 1000px 0;
+}
+/*-------Logos-------*/
+
+.logos{
+  height: 0
+}
+
+.logos li {
+    line-height: 0;
+    display: inline-block;
+    float: right;
+}
+
+.logos li a:hover:not(.activelink) {
+  background-color: rgb(255, 0, 0);
+}
+
+.logos ul {
+  
+}
+
+.logos img{
+  width:50px;
+  height:50px; 
+}
+
 
 /*--------------Table----------- */
 table {
   /* border: 1px solid black;*/
   border:none;
-  border-collapse: collapse;
+  border-collapse: seperate;  /*collapse*/
   padding: 50px 50px 50px 50px;
   margin-bottom: 30px;
   /*border-style: dashed;*/
   margin-left: auto;
   margin-right: auto;
+  /*border-spacing:0 15px;*/
+  background-color: rgb(109, 97, 97)
 }
 
 table td{
@@ -127,4 +178,55 @@ table th{
   line-height: 2;
   letter-spacing: 1px;
   text-align: left;
+}
+
+
+/*-----------------------------------------------------------------------------*/
+.row {
+  display: flex; /* equal height of the children */
+}
+
+.col {
+  flex: 1; /* additionally, equal width */
+  
+  padding: 1em;
+  border: solid;
+  line-height: 0;
+  display: inline-block;
+  float: right;
+  text-align: center;
+  margin: auto;
+}
+
+
+.col img{
+  width:  50px;
+  height: 50px; 
+
+}
+
+.col li a:hover:not(.activelink) {
+  background-color: #111;
+}
+
+.col li a.activelink {
+  background-color: #04aaaa;
+}
+
+/*----------Projects-----------*/
+
+.project {
+  
+}
+
+.prhead{
+  font-size: 35px;
+  margin: 0;
+  padding: 5px;
+  color: #000000;
+  text-align: left;
+
+  line-height: 2;
+  letter-spacing: 1px;
+  text-indent: 420px;
 }
