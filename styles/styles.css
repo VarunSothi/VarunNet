@@ -255,19 +255,19 @@ float: right;
   bottom: 20px; /* Place the button at the bottom of the page */
   right: 30px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
+  border: thick; /* Remove borders */
   outline: none; /* Remove outline */
   background-color: #d66b6b; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+  font-size: 22px; /* Increase font size */
 }
 
 
 #myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+  background-color: rgb(119, 187, 98); /* Add a dark-grey background on hover */
 }
 
 
@@ -289,3 +289,132 @@ float: right;
   letter-spacing: 1px;
   text-indent: 420px;
 }
+
+/*-----------Contact-----------*/
+
+ /* Style inputs, select elements and textareas */
+ input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #cf4e4e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  /*margin-left: 930px;*/
+  cursor: pointer;
+  float: right;
+  justify-content: center;
+}
+
+/* Style the container */
+#contact-form {
+  border-radius: 5px;
+  background-color: #918c8c;
+  padding: 20px;
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) 
+  
+}
+/*
+  align-items: center;
+  display:table;
+  justify-content: center;
+*/  
+
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 5%;
+  margin-top: 6px;
+  display: flex;
+  justify-content: center;
+  padding: 12px 20px;
+  background: yellow;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  display: flex;
+  justify-content: center;
+  padding: 12px 20px;
+  background: yellow;
+}
+
+.col-fn{
+  float: left;
+  width: 5%;
+  margin-top: 6px;
+  justify-content: center;
+  padding: 12px 20px;
+  background: yellow;
+}
+
+.col-fninp{
+  float: left;
+  width: 20%;
+  margin-top: 6px;
+  justify-content: center;
+  padding: 12px 20px;
+  background: yellow;
+}
+
+.col-ln{
+  float:left;
+  width: 5%;
+  margin-top: 6px;
+  margin-left: 90px;
+  justify-content: center;
+  padding: 12px 20px;
+  background: yellow;
+}
+.col-lninp{
+  float: left;
+  width: 20%;
+  margin-top: 6px;
+  margin-left: 0px;
+  justify-content: center;
+  padding: 12px 20px;
+  background: yellow;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  background: yellow;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+/*  @media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+
+*/
+} 
