@@ -290,131 +290,81 @@ float: right;
   text-indent: 420px;
 }
 
-/*-----------Contact-----------*/
 
- /* Style inputs, select elements and textareas */
- input[type=text], select, textarea{
+
+/*-----------Contact-----------*/
+ 
+ 
+
+
+
+
+/*----------------------------Contact form copy-------------------------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: border-box;
   resize: vertical;
 }
 
-/* Style the label to display next to the inputs */
 label {
   padding: 12px 12px 12px 0;
   display: inline-block;
 }
 
-/* Style the submit button */
 input[type=submit] {
-  background-color: #cf4e4e;
+  background-color: #e26857;
   color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
-  /*margin-left: 930px;*/
   cursor: pointer;
   float: right;
-  justify-content: center;
+  margin: 0 auto;
 }
 
-/* Style the container */
-#contact-form {
+input[type=submit]:hover {
+  background-color: #e63529;
+}
+
+.container {
   border-radius: 5px;
-  background-color: #918c8c;
-  padding: 20px;
-  
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%) 
-  
+  background-color: #f2f2f2;
+  padding: 20px; 
+  height:500px;
+  width:500px;
+  margin: 0 auto;
 }
-/*
-  align-items: center;
-  display:table;
-  justify-content: center;
-*/  
 
-
-/* Floating column for labels: 25% width */
 .col-25 {
   float: left;
-  width: 5%;
+  width: 25%;
   margin-top: 6px;
-  display: flex;
-  justify-content: center;
-  padding: 12px 20px;
-  background: yellow;
 }
 
-/* Floating column for inputs: 75% width */
 .col-75 {
   float: left;
-  width: 50%;
+  width: 75%;
   margin-top: 6px;
-  display: flex;
-  justify-content: center;
-  padding: 12px 20px;
-  background: yellow;
 }
-
-.col-fn{
-  float: left;
-  width: 5%;
-  margin-top: 6px;
-  justify-content: center;
-  padding: 12px 20px;
-  background: yellow;
-}
-
-.col-fninp{
-  float: left;
-  width: 20%;
-  margin-top: 6px;
-  justify-content: center;
-  padding: 12px 20px;
-  background: yellow;
-}
-
-.col-ln{
-  float:left;
-  width: 5%;
-  margin-top: 6px;
-  margin-left: 90px;
-  justify-content: center;
-  padding: 12px 20px;
-  background: yellow;
-}
-.col-lninp{
-  float: left;
-  width: 20%;
-  margin-top: 6px;
-  margin-left: 0px;
-  justify-content: center;
-  padding: 12px 20px;
-  background: yellow;
-}
-
 
 /* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
-  background: yellow;
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-/*  @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .col-25, .col-75, input[type=submit] {
     width: 100%;
     margin-top: 0;
   }
-
-*/
-} 
+}

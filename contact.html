@@ -30,63 +30,50 @@
 
     <h2>Contact</h2>
 
-    <div class="container" id="contact-form">
-        <form action="action_page.php">
-
-          <div class="row">
-
-            <div class="col-fn">
-              <label for="fname">First Name</label>
-            </div>
-            <div class="col-fninp">
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
-            </div>
-
-            <div class="col-ln">
-                <label for="lname">Last Name</label>
-            </div>
-            <div class="col-lninp">
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-            </div>
-              
+    <div class="container">
+      <form action="/action_page.php">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">First Name</label>
           </div>
-
-          <!--<div class="row">
-            <div class="col-25">
-              <label for="lname">Last Name</label>
-            </div>
-            <div class="col-75">
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-            </div>
-          </div>---->
-
-          <div class="row">
-            <div class="col-25">
-              <label for="subject">Email</label>
-            </div>
-            <div class="col-75">
-               <input type="text" id="email" name="email" placeholder="Your email address..">
-            </div>
+          <div class="col-75">
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
           </div>
+        </div>
 
-
-          
-          <div class="row">
-            <div class="col-25">
-              <label for="subject">Subject</label>
-            </div>
-            <div class="col-75">
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-            </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Last Name</label>
           </div>
-
-          <div class="row">
-            <input type="submit" value="Submit">
+          <div class="col-75">
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
           </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Email</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="email" name="email" placeholder="Your email address..">
+          </div>
+        </div>
 
-        </form>
-      </div> 
-    
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Subject</label>
+          </div>
+          <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+
+      
 
     
 
